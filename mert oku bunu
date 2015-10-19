@@ -1,1 +1,28 @@
-naber
+class otobus
+{
+
+};
+
+class yolcu
+{
+private:
+	string ad;
+	int *koltuk;
+};
+
+class vektor
+{
+private:
+	yolcu *y;
+	
+public:
+	vektor()
+	{
+		y = new yolcu[10];
+	}
+
+	~vektor() 
+	{ 
+		delete[] y; 
+	}
+};
